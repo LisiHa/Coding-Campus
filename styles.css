@@ -240,7 +240,7 @@ opacity: 1;
 .item-wrapper-music{
     background-image: url("images/singerGirl.jpg");
     background-size: 100vw;
-    background-position:top
+    background-position:top;
     background-repeat: no-repeat;
     height:30vmax;
     width: auto;
