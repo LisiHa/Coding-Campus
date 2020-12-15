@@ -67,27 +67,38 @@ margin-right: 20px;
 
 
 .subtitle{
-    margin-top: 2vw;
-    margin-left: 2vw;
-    color: black;
-    font-size: 2,5vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    color: lightgray;
+    font-size: 2.5vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: uppercase;
 }
+.color-gradient{
+    position:relative;
+    top:0; 
+    bottom:0;
+    left:0;
+    bottom:0;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(0,0,0,0.6418942577030813) 20%, rgba(0,0,0,0) 100%)
+}
 
+
+.item-wrapper {
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vmax;
+    width: auto;
+    color: transparent;
+    transition: color;
+}
 
 
 /*Item learn styles*/
 .item-wrapper-learn{
     background-image: url("images/dogLaptop.jpg");
-    background-size: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height:30vmax;
-    width: auto;
-    color: transparent;
-    transition: color;
-    
 }
 
 .item-wrapper-learn:hover{
@@ -101,13 +112,7 @@ margin-right: 20px;
 /*Item Git styles*/
 .item-wrapper-git{
     background-image: url("images/codeHappyCut.jpg");
-    background-size: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vmax;
-    width: auto;
-    transition: .3s ease; /*für die hover animation des logos*/
-    transition: color 0.5s;
+   
 }
 .item-wrapper-git:hover{
     background-color: darkgray;
@@ -142,12 +147,6 @@ margin-right: 20px;
 /*Item links*/
 .item-wrapper-links{
     background-image: url("images/ColorfulNotebook.jpg");
-    background-size: 100vw;
-    background-repeat:no-repeat;
-    background-position: center;
-    height: 30vmax;
-    width: auto;
-    transition: color;
 }
 .item-wrapper-links:hover{
     background-color: darkgray;
@@ -165,7 +164,6 @@ margin-right: 20px;
     transition: color;
 }
 
-
 .item-wrapper-links:hover .hover-items-links a{
     color:black;
   
@@ -173,11 +171,7 @@ margin-right: 20px;
 /*Item video*/
 .item-wrapper-video{
     background-image:url("images/desk.jpg");
-    background-size: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vmax;
-    width: auto;
+  
     
 }
 .item-wrapper-video:hover{
@@ -215,37 +209,41 @@ opacity: 1;
 .items-wrapper-aboutme{
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:lightgray;
+    
+}
+.items-wrapper-aboutme li{
+    list-style: none;
 }
 
 .item-wrapper-food{
     background-image: url("images/food.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height:30vmax;
     width: auto;
-    color: transparent;
-    transition: color;
 }
 .item-wrapper-languages{
     background-image: url("images/dictionary.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height:30vmax;
     width: auto;
-    color: transparent;
-    transition: color;
 }
+
+
+
 .item-wrapper-music{
     background-image: url("images/singerGirl.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-position:top;
     background-repeat: no-repeat;
     height:30vmax;
     width: auto;
-    color: transparent;
-    transition: color;
+   
     grid-column: 1 / 3;
 }
 
