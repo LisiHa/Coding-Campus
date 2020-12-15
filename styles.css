@@ -1,0 +1,276 @@
+/* Main Styles*/
+.body{
+  margin: 0px;   /* by default hat der body ein margin - wird damit 
+                    überschrieben.*/
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;/*fr = fraction wird verwendet um grids zu definieren
+                                1 fr wäre 100% Bildschirmweite*/
+
+}
+
+
+/*Nav-Bar Styles*/
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height:10vmax;
+    padding: 38px;
+    text-transform: uppercase;
+    font-size: 2,5vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div{  /*so kann man auf alle div-Tags in 
+                                    der Klasse left-side hinweisen*/
+margin-right: 20px;
+}
+
+.nav-link.nav-wrapper{
+    height: 22px;
+    border-bottom: 1 px solid transparent;
+    transition: border-bottom 0.5s; /* Mit transition können Sie Werte 
+                                    von CSS-Eigenschaften allmählich oder 
+                                    schrittweise ändern, indem die dazwischenliegenden Werte 
+                                    interpoliert werden. Eine Transition bezeichnet den Übergang 
+                                    zwischen zwei Zuständen eines HTML-Elements. 
+                                    Transitionen werden dabei durch eine Benutzeraktion ausgelöst.s*/
+}
+
+.nav-link-wrapper a{   /*So kann man auf alle links (a-Tags) in der Klasse nav-link.wrapper
+                            hinweisen */
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s; /*hiermit wird auch eine Farbveränderung animiert.*/
+}
+
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+
+
+/* Content Styles*/
+
+.items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.subtitle{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    color: black;
+    font-size: 2,5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+/*Item learn styles*/
+.item-wrapper-learn{
+    background-image: url("images/dogLaptop.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:30vmax;
+    width: auto;
+    color: transparent;
+    transition: color;
+    
+}
+
+.item-wrapper-learn:hover{
+    color: black;
+    background-color:darkgray;
+    background-image: url(null);
+}
+
+
+
+/*Item Git styles*/
+.item-wrapper-git{
+    background-image: url("images/codeHappyCut.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vmax;
+    width: auto;
+    transition: .3s ease; /*für die hover animation des logos*/
+    transition: color 0.5s;
+}
+.item-wrapper-git:hover{
+    background-color: darkgray;
+    background-image: url(null);
+}
+
+.hover-items-git{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+} 
+
+.link-git a{
+    color: transparent;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.item-wrapper-git:hover .link-git a{ /*hover animation link*/
+    color: black;
+}
+
+.logo-git img{
+    opacity: 0;
+    width: 10vw;
+} 
+
+.item-wrapper-git:hover .logo-git img{ /*hover animation logo*/
+    opacity: 1;
+}
+
+/*Item links*/
+.item-wrapper-links{
+    background-image: url("images/ColorfulNotebook.jpg");
+    background-size: 100vw;
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 30vmax;
+    width: auto;
+    transition: color;
+}
+.item-wrapper-links:hover{
+    background-color: darkgray;
+    background-image: url(null);
+}
+
+.hover-items-links a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    color:transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color;
+}
+
+
+.item-wrapper-links:hover .hover-items-links a{
+    color:black;
+  
+}
+/*Item video*/
+.item-wrapper-video{
+    background-image:url("images/desk.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vmax;
+    width: auto;
+    
+}
+.item-wrapper-video:hover{
+    background-color: darkgray;
+    background-image: url(null);
+}
+.hover-items-video video {
+    width: 50vw;
+    position: relative;
+    align-items: center;
+    opacity: 0;
+}
+.item-wrapper-video:hover .hover-items-video video{
+opacity: 1;
+}
+
+/*footer styles*/
+.footer-wrapper{
+    height: 10vmax;
+    padding-top: 5vw;
+    background-color: rgb(238, 231, 231);
+    text-align: center;
+}  
+.footer-wrapper a {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+} 
+
+/*ABOUT ME STYLES:*/
+
+.items-wrapper-aboutme{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.item-wrapper-food{
+    background-image: url("images/food.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:30vmax;
+    width: auto;
+    color: transparent;
+    transition: color;
+}
+.item-wrapper-languages{
+    background-image: url("images/dictionary.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:30vmax;
+    width: auto;
+    color: transparent;
+    transition: color;
+}
+.item-wrapper-music{
+    background-image: url("images/singerGirl.jpg");
+    background-size: 100vw;
+    background-position:top
+    background-repeat: no-repeat;
+    height:30vmax;
+    width: auto;
+    color: transparent;
+    transition: color;
+    grid-column: 1 / 3;
+}
+
+/*IMPRESSUM STYLES*/
+.content-wrapper-impressum{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:  rgb(238, 231, 231);
+}
+.content-wrapper-impressum a{
+    color: black;
+}
+.content-wrapper-impressum h1{
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
